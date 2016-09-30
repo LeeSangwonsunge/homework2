@@ -1,25 +1,16 @@
 import java.util.*;
-
-class A01 
-	{
-	int age=0;
-	public static void main(String[] s){
-
-		new A01().start();
-		}
-
-		void start(){
-			Scanner s = new Scanner(System.in);
-			System.out.print("your birth_year ");
-			int birth = s.nextInt();
-			this.age = 2016 - birth + 1;
-			print();
-		}
-
-		void print(){
-			if(this.age < 20)
-				System.out.println("children");
-			else
-				System.out.println("adult");
-		}
-}
+class A01{
+        void input(){
+	                Scanner s = new Scanner(System.in);
+			                System.out.print(" your birth year : ");
+					                int birth = s.nextInt();
+							                int age = 2016 - birth + 1;
+									                if(age>19)
+														System.out.println("adult");
+																else
+																			System.out.println("child");
+																			        }
+																				        public static void main(String[] args){
+																					                new A01().input();
+																							        }
+																								}
