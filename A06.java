@@ -14,16 +14,16 @@ class A06{
 		int total = korea + math + english;
 		int avg = total/3;
 		System.out.println("평균은"+avg+"이고");
+		String hakjum = "F";
 		if(avg>=90)
-			System.out.println("학점은 A 입니다");
+			hakjum = "A";
 		else if(avg<90 && avg>=80)
-			System.out.println("학점은 B 입니다");
+			hakjum = "B";
 		else if(avg<80 && avg>=70)
-			System.out.println("학점은 C 입니다");
+			hakjum = "C";
 		else if(avg<70 && avg>=60)
-			System.out.println("학점은 D 입니다");
-		else if(avg<60)
-			System.out.println("학점은 F 입니다");
+			hakjum = "D";
+		System.out.println("학점은"+ hakjum +"입니다");
 		}
 	public static void main(String[] args){
 		new A06().input();
